@@ -21,7 +21,7 @@
 		xmlns="uri://cfbam/cfbamloader"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		xsi:schemaLocation="uri://cfbam/cfbamloader file:/usr/share/msobkow/2.0.13/xsd/cfbam-structured.xsd" >
+		xsi:schemaLocation="uri://cfsec/cfbamloader http://gitlab.markhome.server:8088/msscf/2.0.13/xsd/cfbam-structured.xsd" >
 	<Cluster FullDomName="system" Description="system">
 		<Tenant TenantName="system">
 			<Tld Name="org" >

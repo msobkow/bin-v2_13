@@ -9,7 +9,7 @@ else
 		if [ ! -d ${MSSCFHOME} ]; then
 			echo "ArchiveCFAll213.bash ERROR MSSCFHOME directory ${MSSCFHOME} does not exist"
 		else
-			pushd ${MSSCFHOME}
+			pushd ${MSSCFHOME}/v2_13-maven
 				for aproj in cflib cfcore cfsec cfint cfbam msscf cfkbase
 				do
 					if [ -d ${aproj}_2_13 ]; then

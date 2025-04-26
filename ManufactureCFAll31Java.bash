@@ -1,16 +1,16 @@
 #!/bin/bash
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFCore31Java.bash $*
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFSec31Java.bash $*
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFInt31Java.bash $*
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFCrm31Java.bash $*
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFDbTst31Java.bash $*
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFBam31Java.bash $*
-cd $MSSCFHOME/msscf_2_13/java/bin
+cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFAcc31Java.bash $*
 cd $MSSCFHOME
