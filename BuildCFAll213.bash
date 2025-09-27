@@ -52,7 +52,7 @@ if [ $MavenStatus == 0 ]; then
 	cp -v $HOME/.m2/repository/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar $MSSCFHOME/v2_13-maven/bin
 	cp -v $HOME/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar $MSSCFHOME/v2_13-maven/bin
 	cp -v $HOME/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar $MSSCFHOME/v2_13-maven/bin
-	cp -v $HOME/.m2/repository/xerces/xercesImpl/2.12.2/xercesImpl-2.12.2.jar $MSSCFHOME/v2_13-maven/bin
+#	cp -v $HOME/.m2/repository/xerces/xercesImpl/2.12.2/xercesImpl-2.12.2.jar $MSSCFHOME/v2_13-maven/bin
 	echo "SUCCESS: All 2.13 Java builds completed successfully"
 fi
 cd $MSSCFHOME
