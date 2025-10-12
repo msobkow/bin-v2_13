@@ -3,7 +3,7 @@
 		xmlns="uri://cfsec/cfsecloader"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		xsi:schemaLocation="uri://cfsec/cfsecloader http://gitlab.markhome.server:8088/msscf/2.0.13/xsd/cfsec-structured.xsd" >
+		xsi:schemaLocation="uri://cfsec/cfsecloader file:/opt/$refernce ParentMajVer reference ParentSPrj reference ParentTPrj Name$/2.0.13/cfsec-structured.xsd" >
 	<Cluster FullDomName="system" Description="system">
 		<Tenant TenantName="tenant">
 			<TSecGroup Name="TenantAdmin" IsVisible="true" >
@@ -244,6 +244,294 @@
 				<TSecGroupInclude SubGroup="CFBamUpdater" />
 			</TSecGroup>
 			<TSecGroup Name="DeleteDateType" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash128Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash128Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash128Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash128Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash128Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash128Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash128Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash128Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash128Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash128Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash128Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash128Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash128Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash128Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash128Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash128Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash160Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash160Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash160Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash160Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash160Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash160Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash160Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash160Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash160Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash160Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash160Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash160Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash160Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash160Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash160Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash160Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash224Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash224Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash224Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash224Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash224Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash224Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash224Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash224Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash224Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash224Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash224Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash224Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash224Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash224Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash224Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash224Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash256Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash256Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash256Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash256Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash256Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash256Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash256Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash256Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash256Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash256Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash256Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash256Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash256Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash256Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash256Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash256Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash384Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash384Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash384Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash384Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash384Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash384Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash384Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash384Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash384Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash384Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash384Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash384Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash384Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash384Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash384Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash384Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash512Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash512Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash512Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash512Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash512Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash512Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash512Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash512Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash512Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash512Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash512Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash512Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadDbKeyHash512Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateDbKeyHash512Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateDbKeyHash512Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteDbKeyHash512Type" IsVisible="false" >
 				<TSecGroupInclude SubGroup="CFBamDeleter" />
 			</TSecGroup>
 			<TSecGroup Name="ReadDelDep" IsVisible="false" >
@@ -1408,6 +1696,54 @@
 				<TSecGroupInclude SubGroup="CFBamUpdater" />
 			</TSecGroup>
 			<TSecGroup Name="DeleteUInt64Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadUuid6Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateUuid6Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateUuid6Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteUuid6Col" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadUuid6Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateUuid6Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateUuid6Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteUuid6Def" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadUuid6Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateUuid6Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateUuid6Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteUuid6Gen" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamDeleter" />
+			</TSecGroup>
+			<TSecGroup Name="ReadUuid6Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamReader" />
+			</TSecGroup>
+			<TSecGroup Name="CreateUuid6Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamCreator" />
+			</TSecGroup>
+			<TSecGroup Name="UpdateUuid6Type" IsVisible="false" >
+				<TSecGroupInclude SubGroup="CFBamUpdater" />
+			</TSecGroup>
+			<TSecGroup Name="DeleteUuid6Type" IsVisible="false" >
 				<TSecGroupInclude SubGroup="CFBamDeleter" />
 			</TSecGroup>
 			<TSecGroup Name="ReadUuidCol" IsVisible="false" >
