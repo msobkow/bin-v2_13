@@ -21,7 +21,7 @@ for aprojdir in \
 do
 	if [ -a ${aprojdir}/pom.xml ]; then
 		pushd ${aprojdir}
-			mvn clean
+			mvn -U clean
 		popd
 	fi
 done

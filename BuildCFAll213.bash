@@ -23,7 +23,7 @@ do
 	if [ $MavenStatus == 0 ]; then
 		if [ -a ${aprojdir}/pom.xml ]; then
 			pushd ${aprojdir}
-				mvn install
+				mvn -U install
 				let MavenStatus=$?
 				if [ $MavenStatus != 0 ]; then
 					echo "ERROR: mvn install for ${aprojdir} returned status ${MavenStatus} - build aborted"
