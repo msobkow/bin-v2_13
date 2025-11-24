@@ -6,11 +6,7 @@ cd $MSSCFHOME/v2_13-maven/bin
 cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFInt31Java.bash $*
 #cd $MSSCFHOME/v2_13-maven/bin
-#./ManufactureCFCrm31Java.bash $*
-#cd $MSSCFHOME/v2_13-maven/bin
 #./ManufactureCFDbTst31Java.bash $*
 cd $MSSCFHOME/v2_13-maven/bin
 ./ManufactureCFBam31Java.bash $*
-#cd $MSSCFHOME/v2_13-maven/bin
-#./ManufactureCFAcc31Java.bash $*
 cd $MSSCFHOME
