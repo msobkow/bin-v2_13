@@ -2,6 +2,7 @@
 cd $MSSCFHOME
 for aprojdir in \
 	v2_13-maven/org.msscf.msscf.v2_13.CFCli \
+	v2_13-maven/org.msscf.msscf.v2_13.cfkbase \
 	v2_13-maven/org.msscf.msscf.v2_13.cfbamcust.CFBamXmlLoader \
 	v2_13-maven/org.msscf.msscf.v2_13.cfbamcust.MSSBamCF \
 	v2_13-maven/org.msscf.msscf.v2_13.cfbam.CFBamMssCF \

@@ -18,6 +18,7 @@ for aprojdir in msscforg/java/org.msscf \
 	v2_13-maven/org.msscf.msscf.v2_13.cfbam.CFBamMssCF \
 	v2_13-maven/org.msscf.msscf.v2_13.cfbamcust.MSSBamCF \
 	v2_13-maven/org.msscf.msscf.v2_13.cfbamcust.CFBamXmlLoader \
+	v2_13-maven/org.msscf.msscf.v2_13.cfkbase \
 	v2_13-maven/org.msscf.msscf.v2_13.CFCli
 do
 	if [ $MavenStatus == 0 ]; then

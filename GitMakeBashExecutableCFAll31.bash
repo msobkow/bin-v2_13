@@ -1,39 +1,9 @@
 #!/bin/bash
-cd $MSSCFHOME
-pushd cflib_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-#pushd cfcore_3_1
-#$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-#$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-#popd
-pushd cfsec_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-pushd cfint_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-pushd cfcrm_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-pushd cfdbtst_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-pushd cfbam_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-pushd msscf_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-pushd cfacc_3_1
-$GIT add `find . -name '.gitignore' -o -name '*.bash'`
-$GIT update-index --add --chmod=+x `find . -name '*.bash'`
-popd
-cd $MSSCFHOME
+for adir in $MSSCFHOME/v3_1-maven/java/* $MSSCFHOME/v3_1/java/*
+do
+		pushd $adir
+		chmod 755 `find . -name '*.bash'`
+		git add `find . -name '.gitignore' -o -name '*.bash'`
+		git update-index --add --chmod=+x `find . -name '*.bash'`
+		popd
+done
