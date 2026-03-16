@@ -1,6 +1,6 @@
-Mark's Code Fractal 3.1 aka MSS Code Factory
-
 Copyright (c) 2016-2026 Mark Stephen Sobkow
+
+Mark's Code Fractal 3.1 aka MSS Code Factory
 
 These files are part of Mark's Code Fractal.
 
