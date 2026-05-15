@@ -2,6 +2,7 @@
 cd $MSSCFHOME
 let MavenStatus=0
 for aprojdir in msscforg/java/org.msscf \
+	v2_13-maven/org.msscf.msscf \
 	v2_13-maven/org.msscf.msscf.v2_13 \
 	v2_13-maven/org.msscf.msscf.v2_13.cflib.CFLib \
 	v2_13-maven/org.msscf.msscf.v2_13.cflib.CFLib.JavaFX \

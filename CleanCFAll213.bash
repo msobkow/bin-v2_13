@@ -18,7 +18,8 @@ for aprojdir in \
 	v2_13-maven/org.msscf.msscf.v2_13.cfcore \
 	v2_13-maven/org.msscf.msscf.v2_13.cflib.CFLib.JavaFX \
 	v2_13-maven/org.msscf.msscf.v2_13.cflib.CFLib \
-	v2_13-maven/org.msscf.msscf.v2_13
+	v2_13-maven/org.msscf.msscf.v2_13 \
+	v2_13-maven/org.msscf.msscf
 do
 	if [ -a ${aprojdir}/pom.xml ]; then
 		pushd ${aprojdir}
