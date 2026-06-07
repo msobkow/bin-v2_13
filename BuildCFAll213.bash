@@ -36,6 +36,7 @@ do
 	fi
 done
 if [ $MavenStatus == 0 ]; then
+	cp -v $MSSCF_HOME/v2_13-maven/org.msscf.msscf.v2_13.CFCli/target/org.msscf.msscf.v2_13.CFCli-2.13.11197-spring-boot.jar $MSSCF_HOME/v2_13-maven/bin-v2_13
 	cp -v $HOME/.m2/repository/org/msscf/msscf/v2_13/org.msscf.msscf.v2_13.cfbam.CFBamMssCF/2.13.11197/org.msscf.msscf.v2_13.cfbam.CFBamMssCF-2.13.11197.jar $MSSCFHOME/v2_13-maven/bin-v2_13
 	cp -v $HOME/.m2/repository/org/msscf/msscf/v2_13/org.msscf.msscf.v2_13.cfsec/2.13.11197/org.msscf.msscf.v2_13.cfsec-2.13.11197.jar $MSSCFHOME/v2_13-maven/bin-v2_13
 	cp -v $HOME/.m2/repository/org/msscf/msscf/v2_13/org.msscf.msscf.v2_13.cfbamcust.CFBamXmlLoader/2.13.11197/org.msscf.msscf.v2_13.cfbamcust.CFBamXmlLoader-2.13.11197.jar $MSSCFHOME/v2_13-maven/bin-v2_13
